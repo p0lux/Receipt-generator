@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,20 +17,20 @@
   <!-- Google Fonts -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
   <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="../../../../assets/vendor/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/icon-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/icon-hs/style.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/animate.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" href="{% static '/vendor/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/icon-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/icon-hs/style.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/animate.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/hamburgers/hamburgers.min.css' %}">
 
   <!-- CSS Unify -->
-  <link rel="stylesheet" href="../../../../assets/css/unify-core.css">
-  <link rel="stylesheet" href="../../../../assets/css/unify-components.css">
-  <link rel="stylesheet" href="../../../../assets/css/unify-globals.css">
+  <link rel="stylesheet" href="{% static '/css/unify-core.css' %}">
+  <link rel="stylesheet" href="{% static '/css/unify-components.css' %}">
+  <link rel="stylesheet" href="{% static '/css/unify-globals.css' %}">
 
   <!-- CSS Customization -->
-  <link rel="stylesheet" href="../../../../assets/css/custom.css">
+  <link rel="stylesheet" href="{% static '/css/custom.css' %}">
 </head>
 
 <body>
@@ -112,24 +114,24 @@
 
 
   <!-- JS Global Compulsory -->
-  <script src="../../../../assets/vendor/jquery/jquery.min.js"></script>
-  <script src="../../../../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-  <script src="../../../../assets/vendor/popper.js/popper.min.js"></script>
-  <script src="../../../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static '/vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
+  <script src="{% static '/vendor/popper.js/popper.min.js' %}"></script>
+  <script src="{% static '/vendor/bootstrap/bootstrap.min.js' %}"></script>
 
 
   <!-- JS Implementing Plugins -->
-  <script src="../../../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{% static '/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
 
   <!-- JS Unify -->
-  <script src="../../../../assets/js/hs.core.js"></script>
-  <script src="../../../../assets/js/components/hs.header.js"></script>
-  <script src="../../../../assets/js/helpers/hs.hamburgers.js"></script>
-  <script src="../../../../assets/js/components/hs.tabs.js"></script>
-  <script src="../../../../assets/js/components/hs.go-to.js"></script>
+  <script src="{% static '/js/hs.core.js' %}"></script>
+  <script src="{% static '/js/components/hs.header.js' %}"></script>
+  <script src="{% static '/js/helpers/hs.hamburgers.js' %}"></script>
+  <script src="{% static '/js/components/hs.tabs.js' %}"></script>
+  <script src="{% static '/js/components/hs.go-to.js' %}"></script>
 
   <!-- JS Customization -->
-  <script src="../../../../assets/js/custom.js"></script>
+  <script src="{% static '/js/custom.js' %}"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -168,13 +170,13 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../../../../assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/chosen/chosen.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/prism/themes/prism.css">
-  <link rel="stylesheet" href="../../../../assets/vendor/custombox/custombox.min.css">
-  <link rel="stylesheet" href="../../../../assets/style-switcher/vendor/spectrum/spectrum.css">
-  <link rel="stylesheet" href="../../../../assets/style-switcher/vendor/spectrum/themes/sp-dark.css">
-  <link rel="stylesheet" href="../../../../assets/style-switcher/style-switcher.css">
+  <link rel="stylesheet" href="{% static '/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/chosen/chosen.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/prism/themes/prism.css' %}">
+  <link rel="stylesheet" href="{% static '/vendor/custombox/custombox.min.css' %}">
+  <link rel="stylesheet" href="{% static '/style-switcher/vendor/spectrum/spectrum.css' %}">
+  <link rel="stylesheet" href="{% static '/style-switcher/vendor/spectrum/themes/sp-dark.css' %}">
+  <link rel="stylesheet" href="{% static '/style-switcher/style-switcher.css' %}">
   <!-- End CSS -->
 
 
