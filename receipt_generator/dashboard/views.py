@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
 from .models import User
-from .forms import LoginForm
+from .forms import LoginForm, RegisterForm
 
 
 def index(request):
@@ -9,4 +9,11 @@ def index(request):
 
 
 def login(request):
-    return render(request, 'registration/login.html')
+    form = LoginForm(request.POST)
+    if form.is_valid():
+        email = form.cleaned_data.get('email')
+        password = form.cleaned_data.get('password')
+
+
+def register(request):
+    form = RegisterForm()
