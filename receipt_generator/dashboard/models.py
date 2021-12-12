@@ -1,15 +1,6 @@
 from django.db import models
 from django.utils import timezone
-
-
-class User(models.Model):
-    name = models.CharField(max_length=255, blank=False, null=False)
-    email = models.EmailField(max_length=255, blank=False, null=False)
-    password = models.CharField(max_length=255)
-    sudo = models.BooleanField(default=False)
-
-    def __str__(self):
-        return self.name
+from django.contrib.auth.models import AbstractUser
 
 
 class Home(models.Model):

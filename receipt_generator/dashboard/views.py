@@ -1,19 +1,9 @@
-from django.shortcuts import render, redirect
-from django.views.decorators.http import require_POST
-from .models import User
-from .forms import LoginForm, RegisterForm
+from django.shortcuts import render, redirect, HttpResponse
+from django.contrib.auth.decorators import login_required
 
 
-def index(request):
-    return redirect('login')
-
-
-def login(request):
-    form = LoginForm(request.POST)
-    if form.is_valid():
-        email = form.cleaned_data.get('email')
-        password = form.cleaned_data.get('password')
-
-
-def register(request):
-    form = RegisterForm()
+def home(request):
+    if request.user.is_authenticated:
+        return render(request, 'dashboard/index.html')
+    else:
+        return redirect('users:login')
