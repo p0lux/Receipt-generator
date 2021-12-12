@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth.decorators import login_required
 
 
-def home(request):
+def dashboard(request):
     if request.user.is_authenticated:
         return render(request, 'dashboard/index.html')
     else:
